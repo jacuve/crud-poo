@@ -13,7 +13,7 @@ namespace Models;
 
 		public function __construct()
 		{
-			$this->conn ? new \mysqli(
+			$this->conn = new \mysqli(
 				$this->datos['host'],
 				$this->datos['user'],
 				$this->datos['pass'],
