@@ -62,7 +62,7 @@ namespace Models;
 			edad = '{$this->edad}',
 			promedio = '{$this->promedio}',
 			id_seccion = '{$this->id_seccion}'
-			WHERE id= {$this->id}";
+			WHERE id= '{$this->id}'";
 			$this->conn->consultaSimple($sql);
 		}
 
