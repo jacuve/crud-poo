@@ -9,6 +9,10 @@ footer{
 	padding: 20px;
 	text-align:center;
 }
+nav.navbar{
+background-color: blue;
+	color:white;
+}
 
 .box-principal{
 	margin-left: auto;

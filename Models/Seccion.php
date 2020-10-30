@@ -20,7 +20,7 @@ namespace Models;
 
 		public function listar ()
 		{
-			$sql = "SELECT * FROM secciones ";
+			$sql = "SELECT * FROM secciones ORDER BY nombre ASC";
 			$datos = $this->conn->consultaRetorno($sql);
 			return $datos;
 		}
@@ -28,7 +28,7 @@ namespace Models;
 		public function add()
 		{
 			$sql = "INSERT INTO secciones (id,nombre ) VALUES (null, '{$this->nombre}');";
-
+			$this->conn->consultaSimple($sql);
 		}
 
 		public function delete()
