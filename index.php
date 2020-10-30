@@ -1,9 +1,9 @@
 <?php
+	define('DS', DIRECTORY_SEPARATOR);
+	define('ROOT', realpath(dirname(__FILE__)) . DS);
+	define('URL', 'http://http://localhost/dev/crud-poo/');
+
 	require_once "Config/Autoload.php";
 	Config\Autoload::run();
-	$est = new Models\Estudiante();
-	$est->set("id",1);
-	$datos = $est->view();
-
-	print $datos['nombre'];
-	
+	require_once "Views/template.php";
+	Config\Enrutador::run(new Config\Request());
