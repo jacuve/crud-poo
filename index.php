@@ -1,7 +1,7 @@
 <?php
 	define('DS', DIRECTORY_SEPARATOR);
 	define('ROOT', realpath(dirname(__FILE__)) . DS);
-	define('URL', 'http://http://localhost/dev/crud-poo/');
+	define('URL', 'http://localhost/dev/crud-poo/');
 
 	require_once "Config/Autoload.php";
 	Config\Autoload::run();

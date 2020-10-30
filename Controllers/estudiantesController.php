@@ -5,6 +5,7 @@ namespace Controllers;
 
 	class estudiantesController
 	{
+		
 		private $estudiante;
 
 		public function __construct()
@@ -20,4 +21,3 @@ namespace Controllers;
 
 	}
 
-	$estudiantes = new estudiantesController();

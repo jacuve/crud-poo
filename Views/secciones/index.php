@@ -1,30 +1,26 @@
-<h3>Vista del estudiante</h3>
+<h3>Vista del secciones</h3>
 <?php 
 	//$datos = $estudiantes->index();
 
 	?>
 	<div class="panel panel-success">
 		<div class="panel-heading">
-			<h3>Listado de estudiantes</h3>
+			<h3>Listado de secciones</h3>
 		</div>
 		<div class="panel-body">
 			<table class="table table-stripped table-hover">
 				<thead>
-					<th>Img</th>
+					<th>Id</th>
 					<th>Nombre</th>
-					<th>Edad</th>
-					<th>Promedio</th>
 					<th>Accion</th>
 				</thead>				
 				<tbody>
 					<?php while($row = mysqli_fetch_array($datos)){ ?>
 						<tr>
-							<td><img class="imagen-avatar" src="<?php echo URL; ?>Views/template/images/avatars/<?php echo $row['imagen']; ?>" /></td>
+							<td><?php echo $row['id']; ?></td>
 							<td><?php echo $row['nombre']; ?></td>
-							<td><?php echo $row['edad']; ?></td>
-							<td><?php echo $row['promedio']; ?></td>
-							<td><a class="btn btn-warning" href="<?php echo URL; ?>estudiantes/editar/<?php echo $row['id']; ?>">Editar</a>
-								<a class="btn btn-danger" href="<?php echo URL; ?>estudiantes/eliminar/<?php echo $row['id']; ?>">Eliminar</a>
+							<td><a class="btn btn-warning" href="<?php echo URL; ?>secciones/editar/<?php echo $row['id']; ?>">Editar</a>
+								<a class="btn btn-danger" href="<?php echo URL; ?>secciones/eliminar/<?php echo $row['id']; ?>">Eliminar</a>
 							</td>
 						</tr>					
 					<?php }?>

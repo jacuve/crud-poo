@@ -7,13 +7,6 @@ namespace Models;
 		private $nombre;
 		private $conn;
 
-		public function __construct ($conn)
-		{
-			$this->conn = new Conexion();
-
-
-		}
-
 		public function __construct()
 		{
 			$this->conn = new Conexion();
@@ -28,7 +21,7 @@ namespace Models;
 		public function listar ()
 		{
 			$sql = "SELECT * FROM secciones ";
-			$this->conn->consultaRetorno($sql);
+			$datos = $this->conn->consultaRetorno($sql);
 			return $datos;
 		}
 
