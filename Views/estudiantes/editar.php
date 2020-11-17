@@ -1,6 +1,7 @@
 <?php
 $secciones = $estudiantes->listarSecciones();
 ?>
+<div class="box-principal">
 <h3 class="titulo">Editar Estudiantes</h3>
 <div class="panel panel-success">
 	<div class="panel-heading">
@@ -51,4 +52,5 @@ $secciones = $estudiantes->listarSecciones();
 			<div class="col-md-1"></div>
 		</div>
 	</div>
+</div>
 </div>
